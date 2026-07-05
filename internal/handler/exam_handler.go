@@ -70,6 +70,7 @@ func (h *ExamHandler) GetSummary(c *fiber.Ctx) error {
 	return response.Success(c, fiber.StatusOK, result)
 }
 
+
 func (h *ExamHandler) GetExplanation(c *fiber.Ctx) error {
 	logID, err := c.ParamsInt("logId")
 	if err != nil || logID == 0 {
